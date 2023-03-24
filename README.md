@@ -1,1 +1,2 @@
-# radhika_packaging
+# RADHIKA PACKAGING
+Building website for Radhika packaging
