@@ -3,6 +3,10 @@ html {
     overflow-x: hidden;
 }
 
+body{
+    background-color: black;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@ html {
 .navbar{
     width: 100%;
     height: 10vh;
-    background-color: #456268;
+    background-image: linear-gradient(45deg, #0F1020, #2F195F);
     
     display: flex;
     justify-content: space-between;
@@ -32,6 +36,10 @@ html {
     align-items: center;
 }
 
+.nav--left a {
+    text-decoration: none;
+}
+
 .nav--links {
     padding: 10px;
 }
@@ -42,22 +50,37 @@ html {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, #79A3B1, #D0E8F2);
-    border-bottom: 2px solid #456268;
+    background-image: linear-gradient(45deg, #2F195F, #7353BA);
 }
 
 .sections--2 {
-    /* display: flex;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #7353BA, #2F195F);
+}
+
+#hero--section{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; */
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(45deg, #D0E8F2, #79A3B1);
+}
+
+#hero--section--text::before{
+   content: "";
+   background: url('./assets/hero-img.jpg') no-repeat center center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 110%;
+   z-index: -1;
+   opacity: 0.5;
 }
 
 .form {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 100vh;
     background-color: #0F1020;
     display: flex;
     flex-direction: column;
